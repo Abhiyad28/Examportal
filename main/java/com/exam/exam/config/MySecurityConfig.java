@@ -54,6 +54,7 @@ public class MySecurityConfig{
 		      .authorizeHttpRequests()
 		      .requestMatchers("/generate-token","/user","/category").permitAll()
 		      .requestMatchers("/generate-token","/category").permitAll()
+		      .requestMatchers("/generate-token","/category").permitAll()
 		      .requestMatchers(HttpMethod.OPTIONS).permitAll()
 		      .anyRequest().authenticated()
 		      .and()
